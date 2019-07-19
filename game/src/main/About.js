@@ -4,7 +4,7 @@ const About = () => {
     return ( 
         <div className = "about-wrapper">
         <h1> What makes this Cellular Automata so important?? </h1>
-        <p> If you figure it out please contact me </p>
+        <a href = "http://www.math.com/students/wonders/life/life.html"><p> Click Here To find Out </p> </a>
         </div>
     );
 }
