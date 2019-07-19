@@ -1,10 +1,6 @@
 import React from 'react';
 
 class Box extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
 
     selectBox = () => {
         this.props.selectBox(this.props.row, this.props.col);
@@ -13,7 +9,7 @@ class Box extends React.Component {
     render() { 
         return ( 
         <div 
-        className = {this.props.boxClass}
+        className = {this.props.gridLines ? this.props.boxClass : this.props.boxClassNoLines}
         id ={this.props.id}
         onClick = {this.selectBox}
       />
